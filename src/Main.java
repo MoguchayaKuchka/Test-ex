@@ -123,11 +123,11 @@ public class Main {
             output.append(convertUnderOneThousand((int)(number/1000000000)));
             output.append(" billion");
         }
-        if(number/1000000!=0){
+        if(number/1000000%1000!=0){
             output.append(convertUnderOneThousand((int)(number/1000000%1000)));
             output.append(" million");
         }
-        if(number/1000!=0){
+        if(number/1000%1000!=0){
             output.append(convertUnderOneThousand((int)(number/1000%1000)));
             output.append(" thousand");
         }
